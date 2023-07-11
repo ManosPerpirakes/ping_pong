@@ -2,7 +2,7 @@ from random import randint
 from pygame import *
 init()
 
-class SpriteGame(sprite.Sprite):
+class SpriteGame():
     def __init__(self, x, y, width, height, speed, image_name):
         self.rect = rect.Rect(x, y, width, height)
         self.speed = speed
@@ -10,7 +10,7 @@ class SpriteGame(sprite.Sprite):
         self.rect.y = y
         self.sprite = transform.scale(image.load(image_name), (width, height))
 
-class Playerl(SpriteGame):
+class Playerl():
     def update(self):
         w.blit(self.sprite, (self.rect.x, self.rect.y))
         keys_pressed = key.get_pressed()
