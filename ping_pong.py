@@ -49,8 +49,6 @@ class Ball():
         self.rect.x += addxball
         self.rect.y += addyball
 
-        
-
 w = display.set_mode((1500, 750))
 clock = time.Clock()
 player1 = Playerl(1350, 200, 50, 200, 5, 'Image20230711154148.png')
