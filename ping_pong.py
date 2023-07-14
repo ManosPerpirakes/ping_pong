@@ -61,7 +61,7 @@ closeall = False
 while closeall != True:
     w = display.set_mode((1500, 750))
     display.set_caption('ping pong')
-    font1 = font.Font(None, 70)
+    font1 = font.SysFont('Arial', 70)
     win1 = font1.render('player 1 wins (1-try again)', True, (255, 0, 0))
     win2 = font1.render('player 2 wins (1-try again)', True, (255, 0, 0))
     clock = time.Clock()
